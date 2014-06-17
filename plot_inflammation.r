@@ -24,5 +24,5 @@ out.plot <- ggplot(data.in.melted,(aes(x=PatientID, y=value))) +
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 	
 # save pdf based on input file name
-savename <- paste0(options[1],".pdf")
+savename <- paste0(options[1],".png")
 ggsave(out.plot, file=savename, width = 12, height = 8)
